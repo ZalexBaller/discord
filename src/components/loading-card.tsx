@@ -1,14 +1,16 @@
 // IMPORTS
 import Lottie from 'react-lottie-player'
+import { useTranslation } from 'react-i18next'
 import Card from './card'
 import LoadingAnimation from '../animations/loading.json'
 
 export default function LoadingCard() {
+    const { t } = useTranslation()
     // RETURNS
     return (
         <Card
-            text="We are generating your Robux. This may take a few seconds."
-            title="Generating..."
+            text={t('loading-text')}
+            title={t('loading')}
         >
             <Lottie
                 animationData={LoadingAnimation}

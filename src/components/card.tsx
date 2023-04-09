@@ -7,9 +7,9 @@ export default function CardComponent(
         children, title, logo, text,
     } : {
         children: ReactNode,
-        title: string,
-        logo?: string,
-        text?: string,
+        title: string | null,
+        logo?: string | null,
+        text?: string | null,
     },
 ) {
     return (

@@ -1,0 +1,23 @@
+{
+    "step-1": "Étape 1",
+    "step-2": "Étape 2",
+    "last-step": "Dernière Étape",
+    "next": "Suivant",
+    "enter-username": "Veuillez entrer votre nom d'utilisateur Roblox et sélectionner votre plateforme.",
+    "placeholder": "Nom d'utilisateur Roblox...",
+    "error": "Veuillez entrer votre nom d'utilisateur Roblox",
+    "searching": "Recherche en cours...",
+    "confirmation": "Confirmation",
+    "confirm-text": "Ceci est une confirmation de vos données.",
+    "username": "Nom d'utilisateur",
+    "platform": "Plateforme",
+    "quantity": "Quantité",
+    "loading": "Chargement...",
+    "loading-text": "Nous générons vos Robux. Cela peut prendre quelques secondes.",
+    "quantity-text": "Veuillez sélectionner la quantité de Robux.",
+    "searching-text": "Nous recherchons votre nom d'utilisateur Roblox. Veuillez patienter...",
+    "success-text": "Félicitations ! Nous avons trouvé votre compte !",
+    "success": "Utilisateur trouvé !",
+    "verification-text": "Vous devez vérifier que vous êtes un être humain.",
+    "verify": "Vérifier"
+}

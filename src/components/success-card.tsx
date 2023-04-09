@@ -1,14 +1,16 @@
 // IMPORTS
 import Lottie from 'react-lottie-player'
+import { useTranslation } from 'react-i18next'
 import Card from './card'
 import SuccessAnimation from '../animations/success.json'
 
 export default function UsernameCard() {
+    const { t } = useTranslation()
     // RETURNS
     return (
         <Card
-            text="Congratulations! We found your account!"
-            title="User Found!"
+            text={t('success-text')}
+            title={t('success')}
         >
             <Lottie
                 animationData={SuccessAnimation}

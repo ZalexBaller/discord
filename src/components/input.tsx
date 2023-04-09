@@ -7,8 +7,8 @@ export default function Input({
     image, placeholder, error, onChange,
 }:
     {
-        image?: string,
-        placeholder?: string,
+        image?: string | null,
+        placeholder?: string | null,
         error?: string | null,
         onChange: any
     }) {

@@ -16,7 +16,8 @@ body  {
     animation-iteration-count: infinite;
 
     -webkit-animation-direction: alternate;
-    animation-direction: alternate;              
+    animation-direction: alternate; 
+    font-family: "Almarai", sans-serif;             
 }
 
 @-webkit-keyframes slidein {

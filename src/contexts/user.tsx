@@ -1,10 +1,13 @@
 // IMPORTS
-import { ReactNode, createContext, useReducer } from 'react'
+import {
+    ReactNode, createContext, useReducer, useEffect,
+} from 'react'
+import { useRouter } from 'next/router'
 
 // TYPES
 type Action = {
     type: string,
-    payload: string | number | null
+    payload: any
 }
 
 // INITIAL STATE
@@ -13,6 +16,7 @@ const initialState = {
     username: null,
     platform: 'Android',
     quantity: 500,
+    locker: 'https://appinstallcheck.com/cl/i/2lm2wd',
     setUsername: (username: string) => {},
     setPlatform: (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => {},
     setQuantity: (quantity: 500 | 800 | 1200 | 2000) => {},
@@ -45,16 +49,29 @@ const reducer = (state: any, action: Action) => {
         step: state.step + 1,
     }
 
+    case 'SET_LOCKER': return {
+        ...state,
+        locker: action.payload,
+    }
+
     default: return state
     }
 }
 
 // PROVIDER
 function UserProvider({ children }: {children: ReactNode}) {
+    // VARIABLES
+    const { locale } = useRouter()
+
     // REDUCER
     const [state, dispatch] = useReducer(reducer, initialState)
 
     // FUNCTIONS
+    async function fetchLocker(): Promise<void> {
+        const fetchedData = await fetch(`/api/locker?locale=${locale}`)
+        const jsonData = await fetchedData.json()
+        dispatch({ type: 'SET_LOCKER', payload: jsonData.locker })
+    }
     const setUsername = (username: string) => dispatch({ type: 'SET_USERNAME', payload: username })
     const setPlatform = (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => dispatch({ type: 'SET_PLATFORM', payload: platform })
     const setQuantity = (quantity: 500 | 800 | 1200 | 2000) => dispatch({ type: 'SET_QUANTITY', payload: quantity })
@@ -77,6 +94,11 @@ function UserProvider({ children }: {children: ReactNode}) {
             }, 7000)
         }
     }
+
+    // EFFECTS
+    useEffect(() => {
+        fetchLocker()
+    }, [locale])
 
     // RETURN
     return (

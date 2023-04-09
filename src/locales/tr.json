@@ -1,0 +1,23 @@
+{
+    "step-1": "Adım 1",
+    "step-2": "Adım 2",
+    "last-step": "Son Adım",
+    "next": "İleri",
+    "enter-username": "Lütfen Roblox Kullanıcı Adınızı girin ve platformunuzu seçin.",
+    "placeholder": "Roblox Kullanıcı Adı...",
+    "error": "Lütfen Roblox kullanıcı adınızı girin",
+    "searching": "Aranıyor...",
+    "confirmation": "Onaylama",
+    "confirm-text": "Bu, verilerinizin onaylanmasıdır.",
+    "username": "Kullanıcı Adı",
+    "platform": "Platform",
+    "quantity": "Miktar",
+    "loading": "Yükleniyor...",
+    "loading-text": "Robux'larınız oluşturuluyor. Bu birkaç saniye sürebilir.",
+    "quantity-text": "Lütfen Robux miktarını seçin.",
+    "searching-text": "Roblox Kullanıcı Adınız aranıyor. Lütfen bekleyin...",
+    "success-text": "Tebrikler! Hesabınız bulundu!",
+    "success": "Kullanıcı Bulundu!",
+    "verification-text": "Bir insan olduğunuzu doğrulamanız gerekiyor.",
+    "verify": "Doğrula"
+}

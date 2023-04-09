@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion'
 import { UserContext } from '@/contexts/user'
 import { useContext, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Card from './card'
 
 export default function QuantityCard() {
     // VARIABLES
+    const { t } = useTranslation()
     const {
         quantity, setQuantity, nextStep,
     } = useContext(UserContext)
@@ -14,8 +16,8 @@ export default function QuantityCard() {
     // RETURNS
     return (
         <Card
-            text="Please select the amount of Robux."
-            title="Step 2"
+            text={t('quantity-text')}
+            title={t('step-2')}
             logo="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png"
         >
             <div className="grid grid-cols-2 gap-3 mx-auto">
@@ -101,7 +103,7 @@ export default function QuantityCard() {
                 }}
                 className="py-5 px-10 rounded-2xl shadow-lg bg-blue-600 text-3xl font-extrabold text-gray-100 animate__animated animate__pulse animate__infinite"
             >
-                    Next
+                {t('next')}
             </motion.button>
         </Card>
     )
