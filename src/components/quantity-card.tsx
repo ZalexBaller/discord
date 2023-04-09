@@ -29,8 +29,8 @@ export default function QuantityCard() {
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -360,
-                            borderRadius: '100%',
+                            rotate: -5,
+                            borderRadius: '50%',
                         }}
                     >
                         500 ROBUX
@@ -46,8 +46,8 @@ export default function QuantityCard() {
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -360,
-                            borderRadius: '100%',
+                            rotate: -5,
+                            borderRadius: '50%',
                         }}
                     >
                         800 ROBUX
@@ -63,8 +63,8 @@ export default function QuantityCard() {
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -360,
-                            borderRadius: '100%',
+                            rotate: -5,
+                            borderRadius: '50%',
                         }}
                     >
                         1200 ROBUX
@@ -80,8 +80,8 @@ export default function QuantityCard() {
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -360,
-                            borderRadius: '100%',
+                            rotate: -5,
+                            borderRadius: '50%',
                         }}
                     >
                         2000 ROBUX
