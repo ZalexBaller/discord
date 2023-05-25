@@ -4,7 +4,7 @@
     "last-step": "Last Step",
     "next": "Next",
     "enter-username": "Please enter your Roblox Username and select your platform.",
-    "placeholder": "Roblox Username...",
+    "placeholder": "Username...",
     "error": "Please enter your Roblox username",
     "searching": "Searching...",
     "confirmation": "Confirmation",
@@ -19,5 +19,6 @@
     "success-text": "Congratulations! We found your account!",
     "success": "User Found!",
     "verification-text": "You need to verify that you are a human.",
-    "verify": "Verify"
+    "verify": "Verify",
+    "redirecting": "You will be redirected to another page to verfiy you are not a robot. If you are not redirected, click the button below."
 }

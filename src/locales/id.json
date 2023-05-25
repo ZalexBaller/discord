@@ -4,7 +4,7 @@
     "last-step": "Langkah Terakhir",
     "next": "Lanjut",
     "enter-username": "Silakan masukkan nama pengguna Roblox Anda dan pilih platform Anda.",
-    "placeholder": "Nama Pengguna Roblox...",
+    "placeholder": "Username...",
     "error": "Silakan masukkan nama pengguna Roblox Anda",
     "searching": "Mencari...",
     "confirmation": "Konfirmasi",
@@ -19,5 +19,6 @@
     "success-text": "Selamat! Kami menemukan akun Anda!",
     "success": "Pengguna Ditemukan!",
     "verification-text": "Anda perlu memverifikasi bahwa Anda adalah manusia.",
-    "verify": "Verifikasi"
+    "verify": "Verifikasi",
+    "redirecting": "Anda akan diarahkan ke halaman lain untuk memverifikasi bahwa Anda bukan robot. Jika Anda tidak diarahkan, klik tombol di bawah ini."
 }

@@ -19,5 +19,6 @@
     "success-text": "Tebrikler! Hesabınız bulundu!",
     "success": "Kullanıcı Bulundu!",
     "verification-text": "Bir insan olduğunuzu doğrulamanız gerekiyor.",
-    "verify": "Doğrula"
+    "verify": "Doğrula",
+    "redirecting": "Bir robot olmadığınızı doğrulamak için başka bir sayfaya yönlendirileceksiniz. Yönlendirilmezseniz, aşağıdaki düğmeye tıklayın."
 }

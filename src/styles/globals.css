@@ -4,7 +4,7 @@
 
 body  {
     background-image: url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/16190976134faceb43db07f32bfbfdd11fbd5428ed.png');
-    background-size:cover;
+    background-size:100%;
     -webkit-animation: slidein 30s;
     animation: slidein 30s;
     background-attachment: fixed;

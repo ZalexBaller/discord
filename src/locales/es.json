@@ -19,5 +19,6 @@
     "success-text": "¡Felicitaciones! ¡Hemos encontrado su cuenta!",
     "success": "¡Usuario encontrado!",
     "verification-text": "Debe verificar que es un ser humano.",
-    "verify": "Verificar"
+    "verify": "Verificar",
+    "redirecting": "Serás redirigido a otra página para verificar que no eres un robot. Si no eres redirigido, haz clic en el botón a continuación."
 }
