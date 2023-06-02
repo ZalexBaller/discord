@@ -27,7 +27,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (locale === 'tr')
     return res
       .status(200)
-      .json({ locker: 'https://appinstallcheck.com/cl/i/po4o92' });
+      .json({ locker: 'https://www.wauwfy.com/go.php?oid=16746&t=d&tid=13471&sid=' });
   if (locale === 'id')
     return res
       .status(200)

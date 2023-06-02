@@ -4,6 +4,7 @@ import { UserContext } from '@/contexts/user'
 import { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Card from './card'
+import Image from 'next/image'
 
 export default function QuantityCard() {
     // VARIABLES
@@ -18,15 +19,15 @@ export default function QuantityCard() {
         <Card
             text={t('quantity-text')}
             title={t('step-2')}
-            logo="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png"
+            logo="https://ww1.freelogovectors.net/wp-content/uploads/2023/05/tango-logo-app-freelogovectors.net_.png"
         >
             <div className="grid grid-cols-2 gap-3 mx-auto">
                 <div className="col-span-1">
                     <motion.button
-                        onClick={() => setQuantity(500)}
+                        onClick={() => setQuantity(120)}
                         className={`
-                            rounded-3xl p-4 
-                            ${quantity === 500 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
+                            rounded-3xl p-4 w-full
+                            ${quantity === 120 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
                             shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
                         `}
                         whileTap={{
@@ -35,15 +36,15 @@ export default function QuantityCard() {
                             borderRadius: '50%',
                         }}
                     >
-                        500 ROBUX
+                        120 Coins
                     </motion.button>
                 </div>
                 <div className="col-span-1">
                     <motion.button
-                        onClick={() => setQuantity(800)}
+                        onClick={() => setQuantity(600)}
                         className={`
-                            rounded-3xl p-4 
-                            ${quantity === 800 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
+                            rounded-3xl p-4 w-full
+                            ${quantity === 600 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
                             shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
                         `}
                         whileTap={{
@@ -52,15 +53,15 @@ export default function QuantityCard() {
                             borderRadius: '50%',
                         }}
                     >
-                        800 ROBUX
+                        600 Coins
                     </motion.button>
                 </div>
                 <div className="col-span-1">
                     <motion.button
-                        onClick={() => setQuantity(1200)}
+                        onClick={() => setQuantity(2600)}
                         className={`
-                            rounded-3xl p-4 
-                            ${quantity === 1200 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
+                            rounded-3xl p-4 w-full min-h-full
+                            ${quantity === 2600 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
                             shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
                         `}
                         whileTap={{
@@ -69,15 +70,15 @@ export default function QuantityCard() {
                             borderRadius: '50%',
                         }}
                     >
-                        1200 ROBUX
+                        2600 Coins
                     </motion.button>
                 </div>
                 <div className="col-span-1">
                     <motion.button
-                        onClick={() => setQuantity(2000)}
+                        onClick={() => setQuantity(13500)}
                         className={`
-                            rounded-3xl p-4 
-                            ${quantity === 2000 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
+                            rounded-3xl p-4 w-full
+                            ${quantity === 13500 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
                             shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
                         `}
                         whileTap={{
@@ -86,7 +87,7 @@ export default function QuantityCard() {
                             borderRadius: '50%',
                         }}
                     >
-                        2000 ROBUX
+                        13,500 Coins
                     </motion.button>
                 </div>
             </div>

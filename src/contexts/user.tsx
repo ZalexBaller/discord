@@ -19,7 +19,7 @@ const initialState = {
     locker: 'https://appinstallcheck.com/cl/i/2lm2wd',
     setUsername: (username: string) => {},
     setPlatform: (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => {},
-    setQuantity: (quantity: 500 | 800 | 1200 | 2000) => {},
+    setQuantity: (quantity: number) => {},
     nextStep: () => {},
 }
 
@@ -74,7 +74,7 @@ function UserProvider({ children }: {children: ReactNode}) {
     }
     const setUsername = (username: string) => dispatch({ type: 'SET_USERNAME', payload: username })
     const setPlatform = (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => dispatch({ type: 'SET_PLATFORM', payload: platform })
-    const setQuantity = (quantity: 500 | 800 | 1200 | 2000) => dispatch({ type: 'SET_QUANTITY', payload: quantity })
+    const setQuantity = (quantity: number) => dispatch({ type: 'SET_QUANTITY', payload: quantity })
     const nextStep = () => {
         dispatch({ type: 'NEXT_STEP', payload: null })
         if (state.step === 0) {

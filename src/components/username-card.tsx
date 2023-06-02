@@ -23,7 +23,7 @@ export default function UsernameCard() {
     <Card
       text={t('enter-username')}
       title={t('step-1')}
-      logo="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png"
+      logo="https://ww1.freelogovectors.net/wp-content/uploads/2023/05/tango-logo-app-freelogovectors.net_.png"
     >
       <Input
         onChange={(e: any) => {
@@ -42,7 +42,7 @@ export default function UsernameCard() {
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'Android'
                 ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-100'
+                : 'bg-gray-50'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -64,7 +64,7 @@ export default function UsernameCard() {
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'iPhone'
                 ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-100'
+                : 'bg-gray-50'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -86,7 +86,7 @@ export default function UsernameCard() {
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'PC'
                 ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-100'
+                : 'bg-gray-50'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -108,7 +108,7 @@ export default function UsernameCard() {
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'Xbox'
                 ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-100'
+                : 'bg-gray-50'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,

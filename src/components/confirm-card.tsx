@@ -43,7 +43,7 @@ export default function ConfirmCard() {
                             <h1 className="text-lg lg:text-2xl font-black text-gray-800 my-4">
                                 {quantity}
                                 {' '}
-                                ROBUX
+                                Tango Coins
                             </h1>
                         </td>
                     </tr>
