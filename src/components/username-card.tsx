@@ -10,6 +10,7 @@ import XboxAnimation from '../animations/xbox.json';
 import PcAnimation from '../animations/pc.json';
 import Card from './card';
 import Input from './input';
+import NitroAnimation from '@/animations/nitro.json';
 
 export default function UsernameCard() {
   // VARIABLES
@@ -23,7 +24,7 @@ export default function UsernameCard() {
     <Card
       text={t('enter-username')}
       title={t('step-1')}
-      logo="https://ww1.freelogovectors.net/wp-content/uploads/2023/05/tango-logo-app-freelogovectors.net_.png"
+      animation={NitroAnimation}
     >
       <Input
         onChange={(e: any) => {
@@ -41,8 +42,8 @@ export default function UsernameCard() {
             onClick={() => setPlatform('Android')}
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'Android'
-                ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-50'
+                ? 'border-indigo-500 border-8 bg-indigo-600'
+                : 'bg-gray-200'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -63,8 +64,8 @@ export default function UsernameCard() {
             onClick={() => setPlatform('iPhone')}
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'iPhone'
-                ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-50'
+                ? 'border-indigo-500 border-8 bg-indigo-600'
+                : 'bg-gray-200'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -85,8 +86,8 @@ export default function UsernameCard() {
             onClick={() => setPlatform('PC')}
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'PC'
-                ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-50'
+                ? 'border-indigo-500 border-8 bg-indigo-600'
+                : 'bg-gray-200'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -107,8 +108,8 @@ export default function UsernameCard() {
             onClick={() => setPlatform('Xbox')}
             className={`rounded-3xl p-4 h-28 w-28 ${
               platform === 'Xbox'
-                ? 'border-blue-500 border-8 bg-blue-600'
-                : 'bg-gray-50'
+                ? 'border-indigo-500 border-8 bg-indigo-600'
+                : 'bg-gray-200'
             } shadow-lg`}
             whileTap={{
               scale: 0.8,
@@ -137,7 +138,7 @@ export default function UsernameCard() {
           rotate: 0.1,
           borderRadius: '50%',
         }}
-        className="py-5 px-10 rounded-2xl shadow-lg bg-blue-600 text-3xl font-extrabold text-gray-100 animate__animated animate__pulse animate__infinite"
+        className="py-5 px-10 rounded-2xl shadow-lg bg-indigo-600 text-3xl font-extrabold text-gray-100 animate__animated animate__pulse animate__infinite"
       >
         {t('next')}
       </motion.button>

@@ -5,6 +5,9 @@ import { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Card from './card'
 import Image from 'next/image'
+import NitroBasicSVG from '@/assets/nitro_basic'
+import NitroSVG from '@/assets/nitro'
+import NitroAnimation from '@/animations/nitro.json';
 
 export default function QuantityCard() {
     // VARIABLES
@@ -19,75 +22,45 @@ export default function QuantityCard() {
         <Card
             text={t('quantity-text')}
             title={t('step-2')}
-            logo="https://ww1.freelogovectors.net/wp-content/uploads/2023/05/tango-logo-app-freelogovectors.net_.png"
+            animation={NitroAnimation}
         >
             <div className="grid grid-cols-2 gap-3 mx-auto">
-                <div className="col-span-1">
+                <div className="col-span-1 h-full">
                     <motion.button
-                        onClick={() => setQuantity(120)}
+                        onClick={() => setQuantity('NITRO BASIC')}
                         className={`
-                            rounded-3xl p-4 w-full
-                            ${quantity === 120 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
-                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
+                            rounded-3xl p-4 w-full h-full
+                            ${quantity === 'NITRO BASIC' ? 'border-2' : 'border-0 opacity-70'} 
+                            bg-gradient-to-r from-indigo-400 to-sky-500 text-gray-100
+                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto border-bg-gray-300
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -5,
-                            borderRadius: '50%',
                         }}
                     >
-                        120 Coins
+                        <div className='container mx-auto space-y-2'>
+                            <center><NitroBasicSVG /></center>
+                            <h2>$ 0.00</h2>
+                        </div>
                     </motion.button>
                 </div>
-                <div className="col-span-1">
+                <div className="col-span-1 h-full">
                     <motion.button
-                        onClick={() => setQuantity(600)}
+                        onClick={() => setQuantity('NITRO PLUS')}
                         className={`
-                            rounded-3xl p-4 w-full
-                            ${quantity === 600 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
-                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
+                            rounded-3xl p-4 w-full h-full
+                            ${quantity === 'NITRO PLUS' ? 'border-2' : 'border-0 opacity-70'} 
+                            bg-gradient-to-r from-purple-400 to-pink-500 text-gray-100
+                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto border-bg-gray-300
                         `}
                         whileTap={{
                             scale: 0.8,
-                            rotate: -5,
-                            borderRadius: '50%',
                         }}
                     >
-                        600 Coins
-                    </motion.button>
-                </div>
-                <div className="col-span-1">
-                    <motion.button
-                        onClick={() => setQuantity(2600)}
-                        className={`
-                            rounded-3xl p-4 w-full min-h-full
-                            ${quantity === 2600 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
-                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
-                        `}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: -5,
-                            borderRadius: '50%',
-                        }}
-                    >
-                        2600 Coins
-                    </motion.button>
-                </div>
-                <div className="col-span-1">
-                    <motion.button
-                        onClick={() => setQuantity(13500)}
-                        className={`
-                            rounded-3xl p-4 w-full
-                            ${quantity === 13500 ? 'border-blue-500 border-8 bg-blue-600 text-gray-100' : 'bg-gray-300 border-8 border-gray-400 text-gray-800'} 
-                            shadow-sm text-2xl lg:text-4xl font-black text-center mx-auto
-                        `}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: -5,
-                            borderRadius: '50%',
-                        }}
-                    >
-                        13,500 Coins
+                        <div className='container mx-auto space-y-2'>
+                            <center><NitroSVG /></center>
+                            <h2>$ 0.00</h2>
+                        </div>
                     </motion.button>
                 </div>
             </div>
@@ -102,7 +75,7 @@ export default function QuantityCard() {
                     rotate: 0.1,
                     borderRadius: '50%',
                 }}
-                className="py-5 px-10 rounded-2xl shadow-lg bg-blue-600 text-3xl font-extrabold text-gray-100 animate__animated animate__pulse animate__infinite"
+                className="py-5 px-10 rounded-2xl shadow-lg bg-indigo-600 text-3xl font-extrabold text-gray-100 animate__animated animate__pulse animate__infinite"
             >
                 {t('next')}
             </motion.button>

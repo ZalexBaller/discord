@@ -8,6 +8,7 @@ import VerificationCard from '@/components/verification-card'
 import { useContext } from 'react'
 import { UserContext } from '@/contexts/user'
 import SuccessCard from '@/components/success-card'
+import ConfirmAndRobot from '@/components/confirm-and-robot'
 import Layout from '../components/layout'
 
 export default function Home() {
@@ -22,8 +23,7 @@ export default function Home() {
             {step === 2 && <SuccessCard />}
             {step === 3 && <QuantityCard />}
             {step === 4 && <LoadingCard />}
-            {step === 5 && <ConfirmCard />}
-            {step === 6 && <VerificationCard />}
+            {step === 5 && <ConfirmAndRobot />}
         </Layout>
     )
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body  {
-    background-image: url('https://resources.tango.me/og/new/1200x630_Main.png');
+    background-image: url('https://i.imgur.com/xRyKibv.jpg');
     background-size:100%;
     -webkit-animation: slidein 30s;
     animation: slidein 30s;

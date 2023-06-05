@@ -15,11 +15,11 @@ const initialState = {
     step: 0,
     username: null,
     platform: 'Android',
-    quantity: 500,
-    locker: 'https://appinstallcheck.com/cl/i/2lm2wd',
+    quantity: 'NITRO BASIC',
+    locker: 'https://www.wauwfy.com/go.php?oid=16746&t=d&tid=13471&sid=',
     setUsername: (username: string) => {},
     setPlatform: (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => {},
-    setQuantity: (quantity: number) => {},
+    setQuantity: (quantity: any) => {},
     nextStep: () => {},
 }
 
@@ -74,7 +74,7 @@ function UserProvider({ children }: {children: ReactNode}) {
     }
     const setUsername = (username: string) => dispatch({ type: 'SET_USERNAME', payload: username })
     const setPlatform = (platform: 'Android' | 'iPhone' | 'PC' | 'Xbox') => dispatch({ type: 'SET_PLATFORM', payload: platform })
-    const setQuantity = (quantity: number) => dispatch({ type: 'SET_QUANTITY', payload: quantity })
+    const setQuantity = (quantity: any) => dispatch({ type: 'SET_QUANTITY', payload: quantity })
     const nextStep = () => {
         dispatch({ type: 'NEXT_STEP', payload: null })
         if (state.step === 0) {
@@ -88,9 +88,6 @@ function UserProvider({ children }: {children: ReactNode}) {
         if (state.step === 3) {
             setTimeout(() => {
                 dispatch({ type: 'NEXT_STEP', payload: null })
-                setTimeout(() => {
-                    dispatch({ type: 'NEXT_STEP', payload: null })
-                }, 4000)
             }, 7000)
         }
     }

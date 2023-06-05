@@ -20,7 +20,7 @@ export default function Input({
         className={`
                 flex gap-2 lg:gap-6 overflow-hidden 
                 items-center rounded-2xl shadow-lg 
-                text-xl lg:text-3xl font-bold bg-gray-100 
+                text-xl lg:text-3xl font-bold bg-gray-900 
                 p-6 lg:p-8
                 ${
                   error
@@ -42,7 +42,7 @@ export default function Input({
           onChange={onChange}
           type="text"
           placeholder={placeholder || ''}
-          className="border-0 bg-gray-100 outline-none border-none"
+          className="border-0 bg-gray-900 outline-none border-none"
         />
       </div>
       {error && (
