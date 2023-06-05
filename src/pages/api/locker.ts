@@ -9,6 +9,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   // SEND DATA
   if (locale === 'pr') return res.status(200).json({ locker: 'https://appinstallcheck.com/cl/i/5k8l2v' });
+  if (locale === 'fr') return res.status(200).json({ locker: 'https://locked2.com/o/hxomt4i' });
   return res
     .status(200)
     .json({ locker: 'https://www.wauwfy.com/go.php?oid=16746&t=d&tid=13471&sid=' });
